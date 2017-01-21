@@ -1,5 +1,5 @@
 [package]
-name = "rust_empty"
+name = "range_vec"
 version = "0.1.0"
 authors = ["Brad Gibson <bRad@humanenginuity.com>"]
 
@@ -39,7 +39,7 @@ license = "..."
 #name = "foo"
 
 # This field points at where the crate is located, relative to the `Cargo.toml`.
-path = "src/rust_empty/lib.rs"
+path = "src/lib.rs"
 
 # A flag for enabling unit tests for this target. This is used by `cargo test`.
 test = true
