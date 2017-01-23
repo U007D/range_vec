@@ -1,13 +1,16 @@
 use std::ops::Range;
 use std::ops::{Deref, DerefMut};
 
-pub struct RangeVec(Vec<Range<usize>>);
+pub struct RangeVec
+{
+    range_vec: Vec<Range<usize>>,
+}
 
 impl RangeVec
 {
     pub fn new() -> RangeVec
     {
-       RangeVec(Vec::new())
+       RangeVec{ range_vec: Vec::new()}
     }
 }
 
@@ -16,7 +19,7 @@ impl Deref for RangeVec
     type Target = Vec<Range<usize>>;
     fn deref(&self) -> &Self::Target
     {
-        &self.0
+        &self.range_vec
     }
 }
 
@@ -24,7 +27,7 @@ impl DerefMut for RangeVec
 {
     fn deref_mut(&mut self) -> &mut Self::Target
     {
-        &mut self.0
+        &mut self.range_vec
     }
 }
 
