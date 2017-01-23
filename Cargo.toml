@@ -70,3 +70,6 @@ proc-macro = false
 harness = true
 
 [dependencies]
+num = "*"
+laconic = { git = "https://github.com/bradleygibson/laconic.git"}
+
